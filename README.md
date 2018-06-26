@@ -1,14 +1,14 @@
 # pyshark
 
+**This repository is for the legacy version of pyshark, which works on Python2.7+. It only receives bugfixes
+after version 0.3.8.
+For the new version that's only supported on Python 3.5+, please use the [main repo](https://github.com/KimiNewt/pyshark)**
+
 [![Join the chat at https://gitter.im/pyshark_gitter/Lobby](https://badges.gitter.im/pyshark_gitter/Lobby.svg)](https://gitter.im/pyshark_gitter/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) [![Build Status](https://travis-ci.org/KimiNewt/pyshark.svg)](https://travis-ci.org/KimiNewt/pyshark)
 
 Python wrapper for tshark, allowing python packet parsing using wireshark dissectors.
 
 Extended documentation: http://kiminewt.github.io/pyshark
-
-**Impending Python2 deprecation** - I plan on soon changing the code so it is incompatible with Python 2. Python 2 users will have to keep using an old version, and a fork will be opened for important bugfixes.
-
-**Looking for contributors** - for various reasons I have a hard time finding time to maintain and enhance the package at the moment. Any pull-requests will be reviewed and if any one is interested and is suitable, I will be happy to include them in the project. Feel free to mail me at dorgreen1 at gmail.
 
 There are quite a few python packet parsing modules, this one is different because it doesn't actually parse any packets, it simply uses tshark's (wireshark command-line utility) ability to export XMLs to use its parsing.
 
@@ -20,12 +20,12 @@ Tested on windows/linux.
 ### All Platforms
 Simply run the following to install the latest from pypi
 ```bash
-pip install pyshark
+pip install pyshark-legacy
 ```
 
 Or install from the git repository:
 ```bash
-git clone https://github.com/KimiNewt/pyshark.git
+git clone https://github.com/KimiNewt/pyshark-legacy.git
 cd pyshark/src
 python setup.py install
 ```

@@ -5,7 +5,7 @@ with open(os.path.join(os.path.dirname(__file__), 'README.txt')) as f:
     long_description = f.read()
 
 setup(
-    name="pyshark",
+    name="pyshark-legacy",
     version="0.3.8",
     packages=find_packages(),
     package_data={'': ['*.ini', '*.pcapng']},
